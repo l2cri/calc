@@ -29,6 +29,8 @@ class CalcController extends Controller
 
     public function execute(Request $request)
     {
-        dd($request);
+        $result = $this->calculator->count($request);
+
+        return response(['result'=>$result]);
     }
 }
