@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'CalcController@form')->name('home');
+
+Route::patch('/execute-calc','CalcController@execute')->name('execute');
