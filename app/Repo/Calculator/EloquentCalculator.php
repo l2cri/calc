@@ -36,6 +36,10 @@ class EloquentCalculator implements CalculatorInterface
         return $result;
     }
 
+    public function getOperator(){
+        return ['sum'=>'Сложение','sub'=>'Вычитание','multi'=>'Умножение',"degree"=>"Деление"];
+    }
+
     private static function sum($num1,$num2)
     {
         return $num1 + $num2;

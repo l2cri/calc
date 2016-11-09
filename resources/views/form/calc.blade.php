@@ -36,7 +36,7 @@
                 <div class="form-group">
                     {!! Form::label('operation','Действие:',['class'=>'col-sm-4 control-label']) !!}
                     <div class="col-sm-5">
-                        {!! Form::select('operation', ['sum'=>'Сложение','sub'=>'Вычитание','multi'=>'Умножение',"degree"=>"Деление"],null,['class'=>'form-control']) !!}
+                        {!! Form::select('operation', $operation,null,['class'=>'form-control']) !!}
                     </div>
                 </div>
                 <div class="form-group">

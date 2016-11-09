@@ -24,7 +24,9 @@ class CalcController extends Controller
      */
     public function form()
     {
-        return view('form.calc');
+        $operation =  $this->calculator->getOperator();
+
+        return view('form.calc',compact('operation'));
     }
 
     public function execute(Request $request)

@@ -14,4 +14,5 @@ use Illuminate\Http\Request;
 interface CalculatorInterface
 {
     public function count(Request $request);
+    public function getOperator();
 }
